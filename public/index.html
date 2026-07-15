@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>休假管理系统</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>休假管理</h1>
+      <div class="user-section">
+        <label for="user-select">我是：</label>
+        <select id="user-select">
+          <option value="">请选择姓名</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="month-nav">
+      <button id="prev-month" class="nav-btn">‹</button>
+      <h2 id="month-title">2026年7月</h2>
+      <button id="next-month" class="nav-btn">›</button>
+    </div>
+
+    <div class="calendar" id="calendar"></div>
+
+    <div id="toast" class="toast"></div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
